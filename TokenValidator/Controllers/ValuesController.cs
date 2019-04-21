@@ -16,6 +16,7 @@ namespace TokenValidator.Controllers
         }
 
         // GET api/values/5
+        [Authorize(Roles = "testPermission")]
         public string Get(int id)
         {
             return "value";
